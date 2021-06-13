@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HelloWorld() {
   function authFunc() {
-    WavesKeeper.auth({data: "Auth to the beatch"}).then(auth => console.log(JSON.stringify(auth))).catch(console.log)
+    WavesKeeper.auth({data: "Auth to the beatch"}).then(auth => alert(JSON.stringify(auth))).catch(console.log)
   }
   return (
     <div className="container">
